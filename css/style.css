@@ -45,7 +45,7 @@ article {
 
 /* Estilo para el pie de página (footer) */
 footer {
-    background-color: #f5f6f7; /* Fondo gris claro para el pie de página */
+    background-color: black; /* Fondo gris claro para el pie de página */
     color: #606770; /* Texto gris oscuro para contraste */
     text-align: center; /* Alineación centrada */
     padding: 20px; /* Espacio interno */
