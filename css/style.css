@@ -1,38 +1,76 @@
-header
-{
-    margin: 0 auto;
-    background: linear-gradient(to bottom, #ffd43b, #306998);
-    padding: 20px;
-    color: white;
-    text-align: center; 
-    width: 80%;
-
+/* Estilo general del cuerpo (body) */
+body {
+    font-family: Arial, sans-serif; /* Fuente estándar para un aspecto profesional */
+    background-color: #f0f2f5; /* Color de fondo claro para el cuerpo de la página */
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box; /* Incluye el padding y borde en el ancho y alto de los elementos */
 }
 
-article
-{
-    margin: 0 auto;
-    background: blue;
-    padding: 20px;
-    color: white;
-    text-aling:right;
-    width: 80%;
+/* Estilo para el encabezado (header) */
+header {
+    background-color: #4267B2; /* Azul característico de Facebook */
+    color: white; /* Texto en blanco para contraste */
+    padding: 10px 20px; /* Espacio interno ajustado */
+    text-align: center; /* Alineación centrada */
+    width: 100%; /* Ancho completo de la página */
+    position:sticky; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra sutil para un efecto de elevación */
 }
 
-footer
-
-{
-    margin: 0 auto;
-    background: linear-gradient(to bottom, #ffd43b, #306998);
-    padding: 20px;
-    color: white;
-    text-align: center; 
-    width: 80%;
-
+/* Estilo para el contenedor principal (main) */
+main {
+    padding: 20px; /* Espacio interno */
+    margin-top: 60px; /* Ajuste para evitar que el contenido se superponga al encabezado fijo */
+    margin-bottom: 60px; /* Espacio para el pie de página fijo */
+    max-width: 1200px; /* Ancho máximo del contenido principal */
+    background: white; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados para un aspecto más suave */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-aside{
-    color: white;
-    text-align: center; 
-    width: 80%;
+/* Estilo para el artículo (article) */
+article {
+    background-color: #ffffff; /* Fondo blanco para el artículo */
+    padding: 20px; /* Espacio interno */
+    color: #333; /* Texto oscuro para legibilidad */
+    border: 1px solid #ddd; /* Borde ligero para separar el artículo */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo del artículo */
+}
+
+/* Estilo para el pie de página (footer) */
+footer {
+    background-color: #f5f6f7; /* Fondo gris claro para el pie de página */
+    color: #606770; /* Texto gris oscuro para contraste */
+    text-align: center; /* Alineación centrada */
+    padding: 20px; /* Espacio interno */
+    width: 100%; /* Ancho completo de la página */
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ddd; /* Borde superior para separación */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra sutil para un efecto de elevación */
+}
+
+/* Estilo para la barra lateral (aside) */
+aside {
+    background-color: #ffffff; /* Fondo blanco para la barra lateral */
+    padding: 20px; /* Espacio interno */
+    color: #333; /* Texto oscuro para legibilidad */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio debajo de la barra lateral */
+}
+
+/* Estilo para la línea horizontal (hr) */
+hr {
+    border: 0; /* Elimina el borde predeterminado */
+    height: 1px; /* Altura de la línea */
+    background-color: #ddd; /* Color gris claro */
+    margin: 20px 0; /* Espacio arriba y abajo de la línea */
 }
