@@ -45,7 +45,7 @@ article {
 
 /* Estilo para el pie de página (footer) */
 footer {
-    background-color: #f5f6f7; /* Fondo gris claro para el pie de página */
+    background-color: black; /* Fondo gris claro para el pie de página */
     color: #606770; /* Texto gris oscuro para contraste */
     text-align: center; /* Alineación centrada */
     padding: 20px; /* Espacio interno */
@@ -73,4 +73,61 @@ hr {
     height: 1px; /* Altura de la línea */
     background-color: #ddd; /* Color gris claro */
     margin: 20px 0; /* Espacio arriba y abajo de la línea */
+}
+
+
+
+/* aqui empieza el navbar */
+
+/* Estilo general para el nav */
+nav {
+    background-color: #ffffff; /* Fondo blanco para el nav */
+    border-bottom: 1px solid #ddd; /* Borde inferior sutil */
+    padding: 10px 20px; /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera para efecto de elevación */
+    margin: 0 auto; /* Centrado horizontal */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+/* Estilo para el contenedor del nav */
+.nav-container {
+    display: flex; /* Disposición en flexbox para una alineación flexible */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+/* Estilo para los enlaces del nav */
+nav a {
+    color: #333; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    font-weight: 500; /* Peso de fuente ligeramente negrita */
+    transition: color 0.3s, background-color 0.3s; /* Transiciones suaves para los efectos */
+}
+
+/* Estilo para el enlace activo o en hover */
+nav a:hover, nav a.active {
+    color: #4267B2; /* Color de texto en hover o activo */
+    background-color: #f0f2f5; /* Fondo sutil en hover o activo */
+    border-radius: 4px; /* Bordes redondeados en hover o activo */
+    padding: 5px 10px; /* Espacio interno adicional para el efecto de fondo */
+}
+
+/* Estilo para el logo o título del nav */
+.nav-logo {
+    font-size: 24px; /* Tamaño del texto del logo */
+    font-weight: bold; /* Texto en negrita para el logo */
+    color: #4267B2; /* Color del texto del logo */
+}
+
+/* Estilo para el menú de navegación responsivo (opcional) */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+    
+    nav a {
+        margin: 10px 0; /* Espacio vertical entre los enlaces en pantallas pequeñas */
+    }
 }
