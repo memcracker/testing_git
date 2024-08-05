@@ -9,8 +9,24 @@ header
 
 }
 
+article
+{
+    margin: 0 auto;
+    background: blue;
+    padding: 20px;
+    color: white;
+    text-aling:right;
+    width: 80%;
+}
 
+footer
 
+{
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #ffd43b, #306998);
+    padding: 20px;
+    color: white;
+    text-align: center; 
+    width: 80%;
 
-
-
+}
